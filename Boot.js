@@ -1,4 +1,4 @@
-var Game = {};
+let Game = {};
 
 Game.Boot = function(game){
 
@@ -8,7 +8,7 @@ Game.Boot = function(game){
 Game.Boot.prototype = {
     init:function(){
 
-        this.input.maxPointers = 1
+        this.input.maxPointers = 1;
 
         this.stage.disableVisibilityChange = true;
     },

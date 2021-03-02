@@ -2,7 +2,7 @@
 <html>
     <meta charset="UTF-8"/>
     <title>Tutorial</title>
-	<script src = "phaser.js"></script>
+	<script src = "lib/phaser.js"></script>
 	
 	<script src = "Boot.js"></script>
 
@@ -14,10 +14,10 @@
 
 
     <body>
-        <script type = "text/javascritp">
-           window.onload = function(){
+        <script type = "text/javascript">
+            window.onload = function(){
 
-               var game = new Phaser.Game(800,600,Phaser.CANVAS,'');
+               let game = new Phaser.Game(800,600,Phaser.CANVAS,'');
 
                game.state.add('Boot',Game.Boot);
 			   game.state.add('Preloader',Game.Preloader);
@@ -27,7 +27,7 @@
 			   game.state.start('Boot');
 
 
-           }
+            }
 
            
         </script>
