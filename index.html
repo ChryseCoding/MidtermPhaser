@@ -1,26 +1,35 @@
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8"/>
+    <title>Tutorial</title>
+	<script src = "phaser.js"></script>
 	
-	<title>My Game</title>
+	<script src = "Boot.js"></script>
 
-	<script src="lib/phaser.js"></script>
-	<script src="main.js"></script>
+	<script src = "Preloader.js"></script>
 
-	<style>
-		body {
-			background: black;
-			margin: 0;
-			padding: 0;
-		}
-	</style>
+	<script src = "MainMenu.js"></script>
 
-</head>
+	<script src = "Level1.js"></script>
 
-<body>
-</body>
 
+    <body>
+        <script type = "text/javascritp">
+           window.onload = function(){
+
+               var game = new Phaser.Game(800,600,Phaser.CANVAS,'');
+
+               game.state.add('Boot',Game.Boot);
+			   game.state.add('Preloader',Game.Preloader);
+			   game.state.add('MainMenu',Game.MainMenu);
+			   game.state.add('Level1',Game.Level1);
+
+			   game.state.start('Boot');
+
+
+           }
+
+           
+        </script>
+    </body>
 </html>

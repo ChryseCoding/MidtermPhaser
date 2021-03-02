@@ -10,6 +10,11 @@
                 "url": "assets/Level.js",
                 "type": "sceneFile",
                 "key": "Level"
+            },
+            {
+                "url": "assets/zombiefiles.zip",
+                "type": "binary",
+                "key": "zombiefiles"
             }
         ]
     },
